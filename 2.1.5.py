@@ -16,7 +16,7 @@ try:
     input4.send_keys("Senior.Junior@evraz.com")
 
     current_dir = os.path.abspath(os.path.dirname(__file__))  # получаем путь к директории текущего исполняемого файла
-    file_path = os.path.join(current_dir, '1.txt')  # добавляем к этому пути имя файла
+    file_path = os.path.join(current_dir, 'readme.txt')  # добавляем к этому пути имя файла
     browser.find_element(By.XPATH, "//input[@type='file']").send_keys(file_path)
 
     browser.find_element(By.XPATH, "//button[@class='btn btn-primary']").click()
